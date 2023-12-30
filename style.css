@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    width: 300px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.about-me {
+    max-width: 400px;
+}
+
+.options {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #555555;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button {
+    background-color: #2ecc71;
+}
+
+.whatsapp-button {
+    background-color: #25D366; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.profile-photo {
+    width: 300px;
+    border-radius: 50%;
+    margin: 20px;
+    transition: transform 1.5s;
+    position: relative;
+}
+
+.profile-photo:hover {
+    transform: rotate(3600deg);
+}
+
+.profile-photo.rotate::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('foto2.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.profile-photo:hover::after {
+    opacity: 0;
+}
+
+/* Adiciona rotação apenas quando a classe "rotate" está presente */
+@keyframes rotateAndReplace {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(3600deg);
+    }
+}
+
+.profile-photo.rotate {
+    animation: rotateAndReplace 1.5s forwards;
+}
