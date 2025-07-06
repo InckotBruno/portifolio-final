@@ -150,4 +150,27 @@ a:hover {
   .profile-photo {
     width: 200px;
   }
+
+.aside-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside-buttons .button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.aside-buttons .button:hover {
+  background-color: #2980b9;
+}
+
 }
