@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Bruno Inckot - Portfólio</title>
-    <div class="gtranslate_wrapper"></div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Inckot - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Bruno Inckot</h1>
-            <p class="subtitle">Profissional de TI e Entusiasta de Fitness</p>
-        </header>
-        
-        <div class="content">
-            <img src="foto.png" alt="foto2.png" class="profile-photo" id="photo">
-            <div class="about-me">
-                <p><strong>Olá!</strong> Sou o Bruno! Tenho alguma experiência em TI e Educação Física.</p>
-                <p>Como profissional apaixonado pela área de Tecnologia da Informação, tenho experiência em ITSM, ITIL, ZABBIX e DUDE, colaborando ativamente com empresas de todos os tipos em projetos desafiadores.
-                    Além disso, minha dedicação à Educação Física sempre se destacou, pois tenho uma afinidade natural com liderança de equipe e extensa experiência prática no treinamento de atletas de alto desempenho.</p>
-            </div>
-            <p>Sinta-se a vontade para me conhcer melhor minha história corporativa ou nas salas de treinamento.
+  <div class="container">
+    <header>
+      <h1>Bruno Inckot</h1>
+      <p class="subtitle">Profissional de TI e Entusiasta de Fitness</p>
+      <img src="foto.png" alt="Bruno Inckot" class="profile-photo" id="photo">
 
-            </p>
-        </div>
-        </div>
+      <!-- Navegação -->
+      <nav>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-        <div class="options">
-            <a href="it.html" class="it-option">Trabalho em TI</a>
-            <a href="pe.html" class="pe-option">Educação Física</a>
-        </div>
+    <main>
+      <!-- Seção Sobre mim -->
+      <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>Olá! Sou o Bruno. Tenho experiência em TI e Educação Física.</p>
+        <p>Atualmente trabalho com ITSM, ITIL, Zabbix e Dude, atuando com projetos de infraestrutura em empresas de diferentes segmentos. Também tenho forte vivência prática em treinamento físico e liderança de equipes esportivas.</p>
+      </section>
 
-        <!-- Rodapé com a mensagem de contato -->
-         <footer class="footer">
-          <p>Contato: brunoinckot@email.com</p>
-          <p>© 2025 Bruno Inckot</p>
-        </footer>
+      <!-- Seção Habilidades -->
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>HTML5 e CSS3</li>
+          <li>ITSM / ITIL</li>
+          <li>Monitoramento com Zabbix</li>
+          <li>Gerenciamento de chamados (TopDesk)</li>
+          <li>Liderança de equipes</li>
+        </ul>
+      </section>
 
-    <script src="script.js"></script>
+      <!-- Seção Projetos -->
+      <section id="projetos">
+        <h2>Projetos</h2>
+
+        <article>
+          <h3>Monitoramento com Zabbix</h3>
+          <p>Projeto de monitoramento de servidores e serviços críticos usando Zabbix, incluindo alertas e dashboards para acompanhamento em tempo real.</p>
+        </article>
+
+        <article>
+          <h3>Landing Page Profissional</h3>
+          <p>Desenvolvimento desta página como apresentação de portfólio pessoal, utilizando apenas HTML e CSS puro, sem frameworks.</p>
+        </article>
+      </section>
+
+      <!-- Informações extras -->
+      <aside>
+        <h2>Curiosidades</h2>
+        <ul>
+          <li>Sou apaixonado por musculação e vida saudável</li>
+          <li>Adoro aprender tecnologias novas e desafios técnicos</li>
+          <li><a href="https://github.com/InckotBruno" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/seulink" target="_blank">LinkedIn</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="footer">
+      <p>Contato: brunoinckot@email.com</p>
+      <p>© 2025 Bruno Inckot</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
