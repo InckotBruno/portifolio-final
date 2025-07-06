@@ -172,5 +172,25 @@ a:hover {
 .aside-buttons .button:hover {
   background-color: #2980b9;
 }
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 10px; /* dá espaço entre os itens */
+}
+
+aside li a {
+  color: #00acee;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+aside li a:hover {
+  text-decoration: underline;
+}
+
 
 }
