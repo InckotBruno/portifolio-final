@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Quando o mouse está sobre a imagem
     photo.addEventListener("mouseover", function () {
+        console.log("Mouse over - iniciando rotação");
         photo.classList.add("rotate"); // Adiciona a classe para iniciar a rotação
     });
 
