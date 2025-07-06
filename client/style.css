@@ -102,10 +102,11 @@ a:hover {
     transition: transform 1.5s;
     position: relative;
 }
-
+/* Removendo interaçao 
 .profile-photo:hover {
     transform: rotate(3600deg);
 }
+*/
 
 .profile-photo.rotate::after {
     content: '';
